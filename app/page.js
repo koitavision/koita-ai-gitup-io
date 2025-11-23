@@ -1,4 +1,10 @@
+'use client';  // ← AJOUTEZ CETTE LIGNE EN HAUT
+
 export default function Home() {
+  const handleClick = () => {
+    alert('Application Mistral Chat - Bientôt disponible!');
+  };
+
   return (
     <div style={{ 
       minHeight: '100vh', 
@@ -65,18 +71,20 @@ export default function Home() {
           </p>
         </div>
 
-        <button style={{
-          width: '100%',
-          background: '#3b82f6',
-          color: 'white',
-          padding: '12px 24px',
-          borderRadius: '12px',
-          border: 'none',
-          fontSize: '16px',
-          cursor: 'pointer',
-          fontWeight: 'bold'
-        }}
-        onClick={() => alert('Application Mistral Chat - Bientôt disponible!')}>
+        <button 
+          onClick={handleClick}
+          style={{
+            width: '100%',
+            background: '#3b82f6',
+            color: 'white',
+            padding: '12px 24px',
+            borderRadius: '12px',
+            border: 'none',
+            fontSize: '16px',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          }}
+        >
           Démarrer l'Expérience IA
         </button>
       </div>
